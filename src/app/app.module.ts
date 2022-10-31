@@ -14,6 +14,7 @@ import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SearchemployeeComponent } from './searchemployee/searchemployee.component';
 
 const appRoutes:Routes=[
   {
@@ -33,6 +34,9 @@ const appRoutes:Routes=[
   },
   {
     path:"hook",component:ViewEmployeeComponent
+  },
+  {
+    path:"look",component:SearchemployeeComponent
   }
 
 
@@ -49,7 +53,8 @@ const appRoutes:Routes=[
     AdminComponent,
     AdminNavbarComponent,
     AddEmployeeComponent,
-    ViewEmployeeComponent
+    ViewEmployeeComponent,
+    SearchemployeeComponent
   ],
   imports: [
     BrowserModule,
