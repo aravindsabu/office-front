@@ -11,6 +11,7 @@
                                 <th scope="col">Employee name</th>
                                 <th scope="col">Employee address</th>
                                 <th scope="col">Employee dob</th>
+                                <th scope="col">Employee Date of join (Time)</th>
                                 <th scope="col">Employee email</th>
                                 <th scope="col">Username</th>
                                 <th scope="col">Password</th>
@@ -18,16 +19,18 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                
+                            <tr *ngFor="let i of root">
+                                <td>{{i.employee_id}}</td>
+                                <td>{{i.employee_name}}</td>
+                                <td>{{i.employee_address}}</td>
+                                <td>{{i.emp_dob}}</td>
+                                <td>{{i.emp_dateofjoin}}</td>
+                                <td>{{i.emp_email}}</td>
+                                <td>{{i.username}}</td>
+                                <td>{{i.password}}</td>
+                                <td><button class="btn btn-danger"(click)="deleteEmployee(i.employee_id)">delete</button></td>
+                              
+
                             </tr>
                         </tbody>
                     </table>
