@@ -15,38 +15,34 @@
                   </div>
   
                   <form>
-                    <h2>ADD EMPLOYEE</h2>
+                    <h2>ADD SECURITY</h2>
   
                     <div class="form-outline mb-4">
-                        <label class="form-label" for="form2Example11">Employee id</label>
-                      <input type="text" id="form2Example11" class="form-control" placeholder=" id"name="employee_id"[(ngModel)]="employee_id" />
+                        <label class="form-label" for="form2Example11">Security code</label>
+                      <input type="text" id="form2Example11" class="form-control" placeholder="code"name="security_code"[(ngModel)]="security_code" />
                      
                     </div>
                     <div class="form-outline mb-4">
-                        <label class="form-label" for="form2Example11">Employee name</label>
-                      <input type="text" id="form2Example11" class="form-control" placeholder=" name"name="employee_name"[(ngModel)]="employee_name" />
+                        <label class="form-label" for="form2Example11">Security name</label>
+                      <input type="text" id="form2Example11" class="form-control" placeholder=" name"name="security_name"[(ngModel)]="security_name" />
                      
                     </div>
                     <div class="form-outline mb-4">
-                        <label class="form-label" for="form2Example11">Employee address</label>
-                        <textarea class="form-control" placeholder="address" name="employee_address"[(ngModel)]="employee_address" id="" cols="30" rows="10"></textarea>
+                        <label class="form-label" for="form2Example11">Security address</label>
+                        <textarea class="form-control" placeholder="address" name="address"[(ngModel)]="address" id="" cols="30" rows="10"></textarea>
                      
                     </div>
                     <div class="form-outline mb-4">
-                        <label class="form-label" for="form2Example11">Employee dob</label>
-                      <input type="date" id="form2Example11" class="form-control" placeholder=" dob"name="emp_dob"[(ngModel)]="emp_dob" />
+                        <label class="form-label" for="form2Example11">Security phone number</label>
+                      <input type="text" id="form2Example11" class="form-control" placeholder="phone number "name="phone_number"[(ngModel)]="phone_number" />
                      
                     </div>
                     <div class="form-outline mb-4">
                         <label class="form-label" for="form2Example11">date of join</label>
-                      <input type="date" id="form2Example11" class="form-control" placeholder=" date of join"name="emp_dateofjoin"[(ngModel)]="emp_dateofjoin" />
+                      <input type="date" id="form2Example11" class="form-control" placeholder=" date of join"name="dateofjoin"[(ngModel)]="dateofjoin" />
                      
                     </div>
-                    <div class="form-outline mb-4">
-                        <label class="form-label" for="form2Example11">Employee email</label>
-                      <input type="email" id="form2Example11" class="form-control" placeholder=" email"name="emp_email"[(ngModel)]="emp_email" />
-                     
-                    </div>
+                    
                     <div class="form-outline mb-4">
                         <label class="form-label" for="form2Example11">Username</label>
                       <input type="text" id="form2Example11" class="form-control" placeholder=" username"name="username"[(ngModel)]="username" />
@@ -60,7 +56,7 @@
                     </div>
   
                     <div class="text-center pt-1 mb-5 pb-1">
-                      <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button"(click)="readvalues()">Register</button>
+                      <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"(click)="readValues()" type="button">Register</button>
                    
                     </div>
                     <a routerLink="/done"><h3>GO BACK</h3></a>

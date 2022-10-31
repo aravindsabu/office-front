@@ -1,0 +1,57 @@
+<app-admin-navbar></app-admin-navbar>
+<div class="container">
+    <div class="row g-3">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">search security by Code</label>
+                    <input class="form-control" type="text" name="security_code"[(ngModel)]="security_code" id="">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                  <button class="btn btn-success"(click)="readValue()">search</button>
+                </div>
+                <div *ngFor="let i of data">
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">Security code</label>
+                        <input class="form-control" type="text" name="" value="{{i.security_code}}"[(ngModel)]="i.security_code" id="">
+                    </div>
+
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">Security name</label>
+                        <input class="form-control" type="text" name="" value="{{i.security_name}}"[(ngModel)]="i.security_name" id="">
+                    </div>
+
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">Address</label>
+                        <textarea class="form-control" name="" value="{{i.address}}"[(ngModel)]="i.address" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">Phone number </label>
+                        <input class="form-control" type="text" name="" value="{{i.phone_number}}"[(ngModel)]="i.phone_number" id="">
+                    </div>
+
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label"> Date of join </label>
+                        <input class="form-control" type="date" name="" value="{{i.dateofjoin}}"[(ngModel)]="i.dateofjoin" id="">
+                    </div>
+
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">Username</label>
+                        <input class="form-control" type="text" name="" value="{{i.username}}"[(ngModel)]="i.username" id="">
+                    </div>
+
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <label for="" class="form-label">Password</label>
+                        <input class="form-control" type="password" name="" value="{{i.password}}"[(ngModel)]="i.password" id="">
+                    </div>
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                       <button class="btn btn-primary"(click)="editSecurity()">update</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
