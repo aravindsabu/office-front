@@ -22,4 +22,19 @@ export class ApiService {
   editEmployee=(data:any)=>{
     return this.http.post("http://localhost:8080/editEmployee",data)
   }
+  addSecurity=(data:any)=>{
+    return this.http.post("http://localhost:8080/addSecurity",data)
+  }
+  viewSecurity=()=>{
+    return this.http.get("http://localhost:8080/viewSecurity")
+  }
+  deleteSecurity=(data:any)=>{
+    return this.http.post("http://localhost:8080/deleteSecurity",data)
+  }
+  searchSecurity=(data:any)=>{
+    return this.http.post("http://localhost:8080/searchSecurity",data)
+  }
+  editSecurity=(data:any)=>{
+    return this.http.post("http://localhost:8080/editSecurity",data)
+  }
 }

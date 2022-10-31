@@ -15,6 +15,9 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchemployeeComponent } from './searchemployee/searchemployee.component';
+import { AddSecurityComponent } from './add-security/add-security.component';
+import { ViewSecurityComponent } from './view-security/view-security.component';
+import { SearchSecurityComponent } from './search-security/search-security.component';
 
 const appRoutes:Routes=[
   {
@@ -37,6 +40,15 @@ const appRoutes:Routes=[
   },
   {
     path:"look",component:SearchemployeeComponent
+  },
+  {
+    path:"sep",component:AddSecurityComponent
+  },
+  {
+    path:"oct",component:ViewSecurityComponent
+  },
+  {
+    path:"nov",component:SearchSecurityComponent
   }
 
 
@@ -54,7 +66,10 @@ const appRoutes:Routes=[
     AdminNavbarComponent,
     AddEmployeeComponent,
     ViewEmployeeComponent,
-    SearchemployeeComponent
+    SearchemployeeComponent,
+    AddSecurityComponent,
+    ViewSecurityComponent,
+    SearchSecurityComponent
   ],
   imports: [
     BrowserModule,
