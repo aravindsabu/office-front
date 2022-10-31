@@ -11,6 +11,8 @@ import { SecurityloginComponent } from './securitylogin/securitylogin.component'
 import { FormsModule } from '@angular/forms';
 import { AdminComponent } from './admin/admin.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
+import { AddEmployeeComponent } from './add-employee/add-employee.component';
+import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 
 const appRoutes:Routes=[
   {
@@ -24,7 +26,14 @@ const appRoutes:Routes=[
   },
   {
     path:"done",component:AdminComponent
+  },
+  {
+    path:"book",component:AddEmployeeComponent
+  },
+  {
+    path:"hook",component:ViewEmployeeComponent
   }
+
 
 ]
 
@@ -37,7 +46,9 @@ const appRoutes:Routes=[
     EmployeeloginComponent,
     SecurityloginComponent,
     AdminComponent,
-    AdminNavbarComponent
+    AdminNavbarComponent,
+    AddEmployeeComponent,
+    ViewEmployeeComponent
   ],
   imports: [
     BrowserModule,
